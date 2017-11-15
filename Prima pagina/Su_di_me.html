@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="it">
+<head><title>Su di me</title>
+  <meta charset="utf-8" />
+  <link href="Pagine_stile/Su_di_me_stile.css" media="all" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav>
+    <a href="Homepage.html" class="main_link">Home</a>
+    <a href="su_di_me.html" class="normal_link">Su di me</a>
+  </nav>
+
+  <div id="Main">
+    <h1 id="Title">Su di me</h1>
+    <p class="Helvetica blue">Sto solo cercando di imparare qualcosa di nuovo.</p>
+    <p class="Helvetica blue cursive">Quello che vorrei imparare:
+    <ol class="Helvetica blue">
+      <li>HTML;</li>
+      <li>CSS;</li>
+      <li>Javascript;</li>
+    </ol>
+    </p>
+  </div>
+
+  <div id="Multiple_class">
+    <h2>Classi multiple</h2>
+    <p class="brown bold verdana">Questo paragrafo sarà marrone, ma il font è uguale a quello sotto.</p>
+    <p class="green bold verdana">Questo paragrafo sarà verde.</p>
+  </div>
+
+  <div id="Ancestor">
+    <h2>La discendenza</h2>
+      <p>Paragrafo discendente da div Ancestor.</p>
+      <p>Altro paragrafo discendente.</p>
+  </div>
+  <div id="non_discendenza">
+      <p>Paragrafo non discendente da div Ancestor.</p>
+    </div>
+
+    <div id="Padre">
+      <h2>La paternità</h2>
+        <p>Paragrafo figlio di div Padre.</p>
+        <p>Altro paragrafo figlio.</p>
+        <div id="No_padre">
+        <p>Paragrafo non figlio diretto di div Padre (nipote).</p>
+      </div>
+    </div>
+
+    <div id="Fratelli_diretti">
+      <h2>Fratelli diretti</h2>
+        <p>Fratello maggiore</p>
+        <span>Fratello di mezzo</span>
+        <span>Fratello di mezzo2</span>
+        <span>Fratello minore</span>
+      </div>
+
+      <div id="Fratelli_diretti2">
+        <h2>Fratelli diretti2</h2>
+        <ul>
+          <li class="FD">Fratello maggiore</li>
+          <li class="FD">Fratello di mezzo</li>
+          <p>intermezzo</p>
+          <li class="FD">Fratello di mezzo2</li>
+          <li class="FD">Fratello minore</li>
+      </ul>
+        </div>
+
+        <div id="Fratelli_nondiretti">
+          <h2>Fratelli non diretti</h2>
+          <ul>
+            <li class="FND">Fratello maggiore</li>
+            <li class="FND">Fratello di mezzo</li>
+            <p class="FND">intermezzo</p>
+            <li class="FND">Fratello di mezzo2</li>
+            <li class="FND">Fratello minore</li>
+        </ul>
+          </div>
+
+<div id="pseudo_class">
+  <h2>First Child</h2>
+  <div>
+  <p class="first_child">Primo paragrafo.</p>
+  <p>Secondo paragrafo.</p>
+  <p>Terzo paragrafo.</p>
+  <p>Quarto paragrafo.</p>
+  <p><input type="text"></p>
+</div>
+</div>
+
+<div>
+  <h2>First Letter e first line</h2>
+  <p id="primalettera">La prima lettera di questo paragrafo avrà uno stile diverso</p>
+  <p id="primariga">La prima lettera di questo paragrafo avrà uno stile diverso<br />
+  ma non la seconda, che sarebbe questa.</p>
+</div>
+
+<img src="Img_files/Su_di_me_avatar.jpg" width="500px">
+</body>
+</html>

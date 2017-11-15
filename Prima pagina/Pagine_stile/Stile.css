@@ -1,0 +1,23 @@
+body {
+ background-image: url(../Img_files/Homepage_background.jpg);
+}
+
+h1 {
+ color: red;
+ font: 36px Helvetica, Arial, sans-serif;
+}
+
+h2 {
+ color: red;
+ font: 24px Helvetica, Arial, sans-serif;
+}
+
+.testo {
+ color: black;
+ font: 14px Helvetica, Arial, sans-serif;
+}
+
+.link {
+ color: blue;
+ font: 14px Helvetica, Arial, sans-serif;
+}

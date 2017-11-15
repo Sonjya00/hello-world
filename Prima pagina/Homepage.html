@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="it">
+<head><title>Imparare l'HTML!</title>
+  <meta charset="utf-8" /><!--serve per far visualizzare gli accenti correttamente-->
+<link href="Pagine_stile/Stile.css" media="all" rel="stylesheet" type="text/css"><!--media e type sono valori opzionali-->
+</head>
+
+<body>
+  <nav>
+    <a href="Homepage.html" class="link">Home</a>
+    <a href="Su_di_me.html" class="link">Su di me</a>
+    <a href="Guide_pages/guida_html.pages" class="link">Guida HTML</a>
+  </nav>
+
+<h1 id="Titolo">Titolo: elementi base dell'HTML</h1>
+  <p class="testo">
+    <a name="primo">Questa è la nostra prima pagina HTML! Di seguito le cose studiate finora.</a><br>
+    Per approfondimenti, <a title="in HTML.it puoi trovare risorse per webmaster">visita HTML.it</a><br>
+  <a title="fondo" href="#ultimo" class="link">Vai in fondo alla pagina</a>
+</p>
+
+<div id="indice">
+  <h2>Indice</h2>
+  <ol class="testo">
+    <li><a href="#elenchi" class="link">Elenchi non ordinati, ordinati e liste di definizione</a></li>
+    <li><a href= "#grassetto_corsivo" class="link">Uso del grassetto e del corsivo</a></li>
+    <li><a href= "#citazioni" class="link">Citazioni, acronimi, codice eccetera</a></li>
+    <li><a href="#abbr_def" class="link">Abbreviazioni e definizioni</a></li>
+    <li><a href="#apici_pedici" class="link">Apici e pedici</a></li>
+    <li><a href="#preformattato" class="link">Codice e testo pre formattato</a></li>
+    <li><a href="#altri_elementi" class="link">Altri elementi per la formattazione</a></li>
+    <li><a href="#tabelle" class="link">Le tabelle</li>
+    <li><a href="#link" class="link">I link</a></li>
+    <li><a href="#immagini" class="link">Immagini</a></li>
+    <li><a href="#musica" class="link">Musica</a></li>
+    <li><a href="#video" class="link">Video</a></li>
+    <li></li>
+</ol>
+
+<div id="elenchi">
+  <h2>1. Elenchi non ordinati, ordinati e liste di definizione</h2>
+    <a href="#Titolo" class="link">Torna su</a>
+  <p class="testo">
+    Ecco un elenco non ordinato <abbr title="Unordered list">"UL"</abbr></p>
+  <ul class="testo">
+    <!--attributo data-...=serve per ritenere info utili alla gestione del layout o a supporto dell'interfaccia utente. Non ha effetto sulla resa della pagina. Forse con JavaScript-->
+    <li data-indirizzo="Piazza la lenza" data-telefono="3863535555">Luca</li>
+    <li data-indirizzo="Via le mani dal naso" data-telefono="3164192342">Paolo</li>
+    <li data-indirizzo="Largo la loggia" data-telefono="3213344314">Umberto</li>
+  </ul>
+  <p class="testo">Ecco un elenco ordinato<abbr title="Ordered list">"OL"</abbr>con le varie possibili numerazioni</p>
+  <p class="testo">
+    <ol type="1"><!-- numeri -->
+      <li>Primo livello</li>
+        <li>Primo livello</li>
+          <ol type="a"><!-- lettere minuscole -->
+              <li>Secondo livello</li>
+              <li>Secondo livello</li>
+                  <ol type="A"><!-- lettere maiuscole -->
+                      <li>Terzo livello</li>
+                      <li>Terzo livello</li>
+                         <ol type="i"><!-- numeri romani minuscoli -->
+                            <li>Quarto livello</li>
+                            <li>Quarto livello</li>
+                            <ol type="I"><!-- numeri romani maiuscoli -->
+                               <li>Quinto livello</li>
+                               <li>Quinto livello</li>
+                  </ol>
+                    <li>Quarto livello</li>
+                    <li>Quarto livello</li>
+                </ol>
+                <li>Terzo livello</li>
+                <li>Terzo livello</li>
+              </ol>
+              <li>Secondo livello</li>
+              <li>Secondo livello</li>
+          </ol>
+      </li>
+      <li>Primo livello</li>
+      <li>Primo livello</li>
+  </ol>
+</p>
+<p class="testo">Liste di definizione: ecco i principali tag per delimitare il testo:
+    <dl class="testo">
+      <dt>p</dt>
+      <dd>individua l'apertura di un nuovo paragrafo</dd>
+
+      <dt>div</dt>
+      <dd>individua l'apertura di un nuovo blocco di testo</dd>
+
+      <dt>span</dt>
+      <dd>individua l'apertura di un elemento inline, cui attribuire
+          una formattazione attraverso gli stili</dd>
+    </dl></p>
+</div>
+
+<div id="grassetto_corsivo">
+  <h2>2. Grassetto e corsivo</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+  <p class="testo">
+    <b>A: Ricordi quando ti ho detto che ti avrei ammazzato per ultimo?</b><br>
+    B: Sì, l'hai detto! L'hai detto!<br>
+    <b>A: Ti ho mentito.</b><br>
+  </p>
+  <ul class="testo">
+    <li><b>L'attributo "b" rende il testo in grassetto, modifica solo lo stile;</b></li>
+    <li><strong>L'attributo "strong" attribuisce una forte importanza, tematizza la pagina, è utilizzato da SEO e rende il testo in grassetto;</strong></li>
+    <li><i>L'attributo "i" rende il testo in corsivo, è usato per rappresentare un tono/stato d'animo o qualcosa che si discosta dal resto del contenuto;</i></li>
+    <li><em>L'attributo "em" serve a enfatizzare, è simile a "strong".</em></li>
+  </ul>
+</div>
+
+<div id="citazioni">
+  <h2>3. Citazioni, acronimi, codice eccetera</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+  <p class="testo">
+    Avrei spronato i miei colleghi a fare di più, li avrei incalzati citando
+    <cite><!--Serve per riportare il nome di un'opera da cui si è tratta una citazione. Appare in corsivo-->
+      Dante Alighieri
+    </cite>:
+    <blockquote><!--Ospita contenuti citati da altre fonti, o anche rimandi alla fonte contenuti in elementi cite o footer. Testo spostato verso destra.-->
+    "<q><!--Serve a inserire citazioni direttamente all'interno del testo-->
+      [...] fatti non foste a viver come bruti, ma per seguir virtute e canoscenza
+    </q>"<br>
+    <cite>
+      Inferno Canto XXVI - La Divina Commedia
+    </cite>
+  </blockquote>
+  </p>
+</div>
+
+<div id="abbr_def">
+  <h2>4. Abbreviazioni e definizioni</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+  <p class="testo">In questa guida approfondiamo l'<abbr title="HyperText Markup Language">HTML</abbr> e ne esploriamo i tag e le potenzialità espressive.</p>
+  <p class="testo">Qual è il tuo <dfn title="Insieme di componenti software, che rende operativi computer, apparati e dispositivi informatici">Sistema Operativo</dfn>?</p>
+</div>
+
+<div id="apici_pedici">
+  <h2>5. Apici e pedici</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+  <p class="testo">
+    Apice: Mc<sup>2</sup><br>
+    Pedice: <var>X<sub>i</sub></var>
+  </p>
+</div>
+
+<div id="preformattato">
+  <h2>6. Codice e testo pre formattato</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+  <p>Pre<pre><!--Il testo dentro a pre segue lo stesso layout dell'editor, ad ex va a capo senza bisogno di br-->
+  pre:
+  Allora quando
+  andiamo
+  all'ospedale?
+
+  Adesso!
+  </pre></p>
+
+  <p class="testo">Code<pre>
+    <code><!--Racchiude un frammento di codice-->
+      function Panel(element, canClose, closeHandler) {
+        this.element = element;
+        this.canClose = canClose;
+        this.closeHandler = function () { if (closeHandler) closeHandler() };
+      }
+    </code>
+  </pre>
+  <p class="testo">Samp<br>
+  Rappresenta l'ouptut da un programma o di una riga di comando.
+  </p>
+  <p class="testo">Kdb<br>
+    Salva il documento premendo
+    <kbd><!--Indica l'input dell'utente, ex pulsanti da premere sulla tastiera, Y or N, menu a tendina sotto "File" ecc.-->
+    Ctrl</kbd> + <kbd>S</kbd></p>
+</div>
+
+<div id="altri_elementi">
+  <h2>7. Altri elementi per la formattazione<h2>
+    <a href="#Titolo" class="link">Torna su</a>
+    <ul p class="testo">
+      <li><b>del</b>: <del>Contenuto che deve essere cancellato. Traccia una riga sopra alle parole.</del></li>
+      <li><b>s</b>: <s>Specifica che il testo non è più corretto, accurato o rilevante.</s></li>
+      <li><b>ins</b>: <ins>Definisce un testo che è stato aggiunto al documento. Viene sottolineato.</ins></li>
+      <li><b>mark</b>: <mark>Definisce un testo evidenziato.</mark></li>
+      <li><b>time</b>: Definisce una data e un'ora leggibile. Può essere usato per codificare data/ora in un modo leggibile per una macchina (ex per la SEO ecc.):<br>
+        Apriamo alle <time>10:00</time> ogni mattina.
+        <time datetime="2016-05-31 20:00">il trentun maggio alle 8</time></li>
+      <li><b>small</b>: <small>Testo piccolo</small><br></li>
+    </ul>
+</div>
+
+<div>
+  <h2 id="tabelle">8. Le tabelle</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+
+  <table>
+      <tr><td>Colonna 1</td><td>Colonna 2</td><td>Colonna 3</td></tr>
+      <tr><td>Dato 1,1</td><td>Dato 1,2</td></tr>
+      <tr><td>Dato 2,1</td><td>Dato 2,2</td></tr>
+      <tr><td>Dato 3,1</td><td>Dato 3,2</td></tr>
+  </table>
+
+  <br><br><br>
+
+  <table>
+    <caption>La mia prima tabella</caption>
+    <thead>
+      <tr><th>Colonna1</th><th>Colonna2</th><th>Colonna3</th></tr>
+    </thead>
+    <tfoot>
+      <tr><td>Risultato1</td><td>Risultato2</td><td>Risultato3</td></tr>
+    </tfoot>
+    <body>
+      <tr><td>Dato1</td><td>Dato2</td><td>Dato3</td></tr>
+      <tr><td>Dato1.2</td><td>Dato2.2</td><td>Dato3.2</td></tr>
+      <tr><td>Dato1.3</td><td>Dato2.3</td><td>Dato3.4</td></tr>
+    </body>
+  </table>
+
+
+  <table>
+      <thead>
+          <tr><th colspan="3">double head</th><th>head</th><th>head</th></tr>
+      </thead>
+      <tbody>
+          <tr><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td></tr>
+          <tr><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td></tr>
+          <tr><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td><td>cell</td></tr>
+      </tbody>
+  </table>
+
+
+  <table>
+    <caption>Orario III B</caption>
+    <thead>
+        <tr>
+  	  <th scope="col">Ora</th><th>Lunedì</th><th scope="col">Martedì</th scope="col"><th scope="col">Mercoledì</th><th scope="col">Giovedì</th scope="col"><th scope="col">Venerdì</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">I</th>
+  		 <td rowspan="3">Italiano</td><td>Geografia</td><td nowrap>Ed. artistica</td><td colspan="2">Ed. Musicale</td>
+        </tr>
+        <tr>
+            <th scope="row">II</th>
+  		 <td rowspan="2">Scienze</td><td rowspan="2">Ed. fisica</td><td colspan="2">Matematica</td>
+        </tr>
+        <tr>
+            <th scope="row">III</th>
+  		 <td colspan="2">Italiano</td>
+        </tr>
+        <tr>
+            <th scope="row">IV</th>
+  		 <td>Storia</td><td>Matematica</td><td>Geografia</td><td colspan="2">Ed. tecnica</td>
+        </tr>
+    </tbody>
+  </table>
+
+
+</div>
+
+<div>
+  <h2 id="link">9. I link</h2>
+  <a href="#Titolo" class="link">Torna su</a>
+</div>
+
+<div id="immagini">
+  <h2>10. Immagini<h2>
+    <a target=_"blank" href="https://it.wikipedia.org/wiki/Mare"><img src="Img_files/Homepage_img.jpg" width="420" height="340"></a>
+  </div>
+
+<div id="musica">
+  <h2>11. Musica</h2>
+  <audio controls loop> <!--controls serve per visualizzare i tasti, autoplay per far partire l'audio da solo e loop per farlo ripetere-->
+    <source src="Music_files/Homepage_soundtrack.mp3" type="audio/mp3">
+      Il tuo browser non supporta il file audio <!--messaggio visualizzato solo nel caso in cui il file non viene letto-->
+    </audio>
+  </div>
+
+<div id="video" title="Come includere i video nella pagina">
+  <h2>12. Video</h2>
+  <video width="420" height="340" controls>
+    <source src="Video_files/Coniglio.mp4" type="video/mp4">
+</video>
+</div>
+
+<ul>
+<li><a href="#primo">Vai al primo paragrafo.</a></li>
+<li><a href="#indice">Guarda l'indice.</a></li>
+<li>Il seguente è un <dfn title="Empty link">link vuoto</dfn>, puoi <abbr title="Tornare su"><a href="#">TS</a></abbr></li>
+<li>Anche qui: <a href="Homepage.html" accesskey="h">Inizio</a></li>
+<li><a name="ultimo">Questo è il fondo della pagina.</a></li>
+</ul>
+
+<button type="button" onclick="alert('Ciao!')">Cliccami</button>
+<a href="javascript:alert('Ciao!')">Cliccami</a>
+
+</body>
+</html>

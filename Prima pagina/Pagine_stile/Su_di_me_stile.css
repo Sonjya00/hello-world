@@ -1,0 +1,187 @@
+/** {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}*/
+
+* { /* attribuisce lo stile a tutto */
+ background-color: navajowhite;
+ font-family:"Lucida Console", Monaco, monospace;
+}
+
+body {
+ width:auto;
+ padding: 30px;
+ border: 10px ridge darksalmon;
+ background-image:url(../Img_files/Su_di_me_background.png);
+ background-repeat:repeat;
+ background-attachment:fixed;/*opposto di "scroll", l'immagine di sfondo rimane bloccata anche se si scorre la pagina*/
+}
+
+div {
+ width:95%; /* il box sarà il 50% della pagina*/
+ min-width:250px; /* anche se si restringe la finestra del browser, il box sarà largo minimo 200px. */
+ max-width:800px; /* anche se si allarga"", il box sarà largo massimo 400px. */
+ padding:5px 10px;
+ border-width: 5px 10px 5px 10px;
+ border-color:inherit;
+ border-style:inherit;
+ margin-bottom:20px;
+ margin-left:auto;/*se i margini dx e sx sono auto, il box è centrato*/
+ margin-right:auto;
+ height:300px;
+ overflow: scroll;/* se non c'è abbastanza spazio nel box, verrà visualizzata una barra di scorrimento. */
+ background-color:inherit;
+ background-image:url(../Img_files/Su_di_me_background2.jpg);
+ background-repeat:no-repeat;
+ background-position:bottom right;
+}
+
+div div { /*le div secondarie*/
+ width: 500px;
+ margin-left: -11px;
+ margin-right: -10px;
+}
+
+div * { /*il contenuto di div*/
+  background-color:inherit;
+}
+
+nav {
+ width:95%;
+ min-width:250px;
+ max-width:800px;
+ padding:10px 10px;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:10px;
+ margin-bottom:10px;
+ border-color:inherit;
+ border-style:inherit;
+ border-width: 5px 10px 5px 10px;
+}
+
+nav a {
+ padding:auto;
+}
+
+#Title, h2 { /* #id per attribuire stile agli id */
+ color: orangered;
+ text-transform: uppercase;
+ width: auto;
+ max-width:300px;
+ border: 5px outset oldlace;
+}
+
+.Helvetica, .Helvetica li {  /* .class per attribuire stile alle classi */
+ font: 12px Helvetica, Arial, sans-serif;
+}
+
+.blue, .blue li { /*.blue li= tutti i "li" dentro ad un contenitore con categoria .blue saranno modificati */
+ color: blue;
+}
+
+.cursive {
+ font-style: italic;
+}
+
+ol.Helvetica, li.Helvetica { /* elenco di elementi con le stesse caratteristiche */
+ color: purple;
+}
+
+.brown {
+ color: brown;
+}
+
+.green {
+ color: green;
+}
+
+p.bold.verdana { /* p.categoria1.categoria2 = gli elementi che hanno entrambe le categorie vengono modificati */
+ font: 14px Verdana;
+ font-style: bold;
+}
+
+#Ancestor p {/* tutti gli elementi discendenti dall'elemento con categoria Ancestor sono modificati*/
+ color: gray;
+}
+
+#Padre > p {/* tutti gli elementi figli diretti dell'elemento con categoria Ancestor sono modificati. Non i nipoti. */
+ color: gray;
+}
+
+p + span {/* L'elemento fratello diretto di i viene modificato. I fratelli indiretti no. */
+ color: gray;
+}
+
+li.FD + li {/* tutti i fratelli, diretti e non, sono modificati, ma non il primo fratello originale. */
+ color: gray;
+}
+
+li.FND ~ li {/* tutti i fratelli, diretti e non, sono modificati, ma non il primo fratello originale. */
+ color: gray;
+}
+
+a.main_link:link {/* Modifica lo stile del link con categoria "main_link" prima che il link sia visitato.*/
+ color: lightblue;
+ text-decoration: none;
+ font-weight: bold;
+}
+a.main_link:visited {/* "" dopo che il link è stato visitato.*/
+ color: mediumslateblue;
+}
+a.main_link:hover {/* "" mentre si passa sopra al link con il mouse.*/
+ color: blue;
+}
+a.main_link:active {/* "" mentre si clicca sopra al link con il mouse.*/
+ color: red;
+}
+
+p.first_child:first-child {/* il paragrafo che è il primo figlio del contenitore in cui si trova cambia stile.*/
+ color: green;
+}
+
+input {
+ background: white;
+}
+input:focus {/* Quando si clicca sulla casella per l'input del testo, lo sfondo da bianco diventa giallo.*/
+ background: yellow;
+}
+
+p#primalettera:first-letter {
+ font-weight: bold;
+ color: mediumturquoise;
+}
+
+p#primariga:first-line {
+ font-weight: bold;
+ color: mediumturquoise;
+}
+
+h2:before { content: open-quote; /*con before e after posso aggiungere contenuto davanti/dietro ai selettori specificati, e definire lo stile di quel contenuto*/
+ font-weight:bold;
+ color:plum;
+ background:orange;
+ border-width:2px;
+ border-color:inherit;
+}
+
+h2:after { content: close-quote;
+ font-weight:bold;
+ color:pink;
+ background:orange;
+ border-width:2px;
+ border-color:inherit;
+}
+
+h1:before { content: url(../Img_files/Logo.jpg);
+}
+
+img {
+  width:95%;
+  min-width:250px;
+  max-width:800px;
+  padding:5px 10px;
+  margin-left:auto;
+  margin-right:auto;
+}
